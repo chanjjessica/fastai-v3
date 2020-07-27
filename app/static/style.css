@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #F9F7E8;
 }
 
 .no-display {
@@ -11,6 +11,7 @@ body {
     padding: 10px 50px;
     text-align: center;
     font-size: 14px;
+
 }
 
 .title {
@@ -22,6 +23,7 @@ body {
 
 .content {
     margin-top: 10em;
+    
 }
 
 .analyze {
@@ -39,11 +41,20 @@ body {
     font-size: 13px;
 }
 
+#demobox{
+    background-color: #FDCFB3;
+    min-height: 100vh;
+}
+
+.headerbox{
+    /* background-color: #CEC8E4; */
+}
+
 button.choose-file-button {
     width: 200px;
     height: 40px;
     border-radius: 2px;
-    background-color: #ffffff;
+    background-color: #CEC8E4;
     border: solid 1px #7052CB;
     font-size: 13px;
     color: #7052CB;
@@ -54,9 +65,9 @@ button.analyze-button {
     height: 40px;
     border: solid 1px #7052CB;
     border-radius: 2px;
-    background-color: #7052CB;
+    background-color: #CEC8E4;
     font-size: 13px;
-    color: #ffffff;
+    color: #7052CB;
 }
 
 button:focus {
