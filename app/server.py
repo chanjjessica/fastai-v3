@@ -97,8 +97,8 @@ async def analyze(request):
     img_bytes = await (img_data['file'].read())
     img = open_image(BytesIO(img_bytes))
     prediction = learn.predict(img)[0]
-    formatted = str(prediction).replace("_"," ")
-    return JSONResponse({'result': formatted})
+    formatted = str(prediction).replace("_"," ")  
+    return JSONResponse({'result': formatted.title()})
 
 
 if __name__ == '__main__':
