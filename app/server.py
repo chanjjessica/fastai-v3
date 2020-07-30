@@ -90,6 +90,11 @@ async def homepage(request):
     html_file = path / 'view' / 'index.html'
     return HTMLResponse(html_file.open().read())
 
+@app.route('/breeds')
+async def breeds(request):
+    html_file = path / 'view' / 'breeds.html'
+    return HTMLResponse(html_file.open().read())
+
 
 @app.route('/analyze', methods=['POST'])
 async def analyze(request):
@@ -98,7 +103,7 @@ async def analyze(request):
     img = open_image(BytesIO(img_bytes))
     prediction = learn.predict(img)[0]
     formatted = str(prediction).replace("_"," ")  
-    return JSONResponse({'result': formatted.title()})
+    return JSONResponse({'result': formatted.title(), 'summary': str(prediction)})
 
 
 if __name__ == '__main__':
