@@ -53,6 +53,19 @@ function showPicked(input) {
   reader.readAsDataURL(input.files[0]);
 }
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.scrollspy');
+  var instances = M.ScrollSpy.init(elems, options);
+});
+
+function getActiveElement(id) {
+  return 'a[href="#' + id + '"]';
+}
+
+var instance = M.ScrollSpy.getInstance(elem);
+
+
 function analyze() {
   var uploadFiles = el("file-input").files;
   if (uploadFiles.length !== 1) alert("Please select a file to analyze!");
