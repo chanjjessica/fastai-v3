@@ -74,7 +74,7 @@ function analyze() {
       var response = JSON.parse(e.target.responseText);
       el("result-label").innerHTML = `Result = ${response["result"]}`;
       el("file-summary").innerHTML = summary[response["summary"]][0];
-      el("file-link").innerHTML = summer[response["summary"]][1];
+      el("file-link").innerHTML = summary[response["summary"]][1];
     }
     el("analyze-button").innerHTML = "Analyze";
   };
