@@ -73,3 +73,5 @@ button.analyze-button {
 button:focus {
     outline: 0;
 }
+
+#more {display: none;}
