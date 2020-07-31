@@ -72,7 +72,7 @@ function analyze() {
   xhr.onload = function(e) {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
-      el("result-label").innerHTML = `Result = ${response["result"]}`;
+      el("result-label").innerHTML = `This pet is a... ${response["result"]}`;
       el("file-summary").innerHTML = summary[response["summary"]][0];
       el("file-link").innerHTML = summary[response["summary"]][1];
       el("file-link").href = summary[response["summary"]][1];
