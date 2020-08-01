@@ -1,5 +1,5 @@
 body {
-    background-color: #F9F7E8;
+    background-color: #f8f5dd;
 }
 
 .no-display {
@@ -11,6 +11,7 @@ body {
     padding: 10px 50px;
     text-align: center;
     font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -46,8 +47,9 @@ body {
     min-height: 100vh;
 }
 
-.headerbox{
-    /* background-color: #CEC8E4; */
+.nav-wrapper{
+    background-color: #a494df;
+
 }
 
 button.choose-file-button {
@@ -74,4 +76,3 @@ button:focus {
     outline: 0;
 }
 
-#more {display: none;}
