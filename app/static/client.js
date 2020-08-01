@@ -74,10 +74,10 @@ function analyze() {
       var response = JSON.parse(e.target.responseText);
       var index = summary[response["summary"]][0];
       if (index < 12){
-      el("result-label").innerHTML = `This cat is a... ${response["result"]}`;
+      el("result-label").innerHTML = `Your cat is a... ${response["result"]}`;
       }
       else{
-        el("result-label").innerHTML = `This dog is a... ${response["result"]}`;
+        el("result-label").innerHTML = `Your dog is a... ${response["result"]}`;
       }
       el("file-summary").innerHTML = summary[response["summary"]][1];
       el("file-link").innerHTML = summary[response["summary"]][2];
