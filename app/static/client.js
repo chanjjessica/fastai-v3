@@ -73,7 +73,7 @@ function analyze() {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
       var index = summary[response["summary"]][0];
-      if (index > 12){
+      if (index < 12){
       el("result-label").innerHTML = `This cat is a... ${response["result"]}`;
       }
       else{
