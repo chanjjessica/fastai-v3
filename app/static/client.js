@@ -79,7 +79,6 @@ function analyze() {
       else {
         el("result-label").innerHTML = `This dog is a... ${response["result"]}`;
       }
-      // el("result-label").innerHTML = `This pet is a... ${response["result"]}`;
       el("file-summary").innerHTML = summary[response["summary"]][1];
       el("file-link").innerHTML = summary[response["summary"]][2];
       el("file-link").href = summary[response["summary"]][2];
