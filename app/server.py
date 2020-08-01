@@ -9,6 +9,13 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
+routes = [
+    ...
+    Mount('/cats', app=StaticFiles(directory='cats'), name="cats"),
+    Mount('/dogs', app=StaticFiles(directory='dogs'), name="dogs"),
+
+]
+
 export_file_url = 'https://drive.google.com/uc?export=download&id=1vl13dJ_Cyn9LhAc2Fzsw4HmaiZ-tGgzT'
 export_file_name = 'export.pkl'
 
