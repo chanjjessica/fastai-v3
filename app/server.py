@@ -11,9 +11,7 @@ from starlette.staticfiles import StaticFiles
 
 routes = [
     ...
-    Mount('/cats', app=StaticFiles(directory='cats'), name="cats"),
-    Mount('/dogs', app=StaticFiles(directory='dogs'), name="dogs"),
-
+    Mount('/static', app=StaticFiles(directory='../pets'), name="static"),
 ]
 
 export_file_url = 'https://drive.google.com/uc?export=download&id=1vl13dJ_Cyn9LhAc2Fzsw4HmaiZ-tGgzT'
