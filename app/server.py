@@ -10,7 +10,7 @@ from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1b_-wL3DChVNDerkbb4rh7bvylkOx8bLS'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1vl13dJ_Cyn9LhAc2Fzsw4HmaiZ-tGgzT'
 export_file_name = 'export.pkl'
 
 classes = ['Abyssinian',
